@@ -1,14 +1,15 @@
 import Image from "next/image";
 
+import { Box } from "../components/shared/Box";
 import { Button } from "./Button";
 import { ButtonRound } from "./ButtonRound";
 
 import mastercraftLogo from "../../images/logo-mastercraft.svg";
 import bookmarkIcon from "../../images/icon-bookmark.svg";
 
-export function Box() {
+export function IntroBox() {
   return (
-    <div className="flex flex-col justify-items-center justify-center border-solid border-slate-800 bg-white rounded-lg shadow-lg px-4 mx-auto w-10/12 text-center relative -top-12">
+    <Box className="flex flex-col justify-items-center justify-center border-solid border-slate-800 bg-white rounded-lg shadow-lg px-4 mx-auto w-10/12 text-center relative -top-12">
       <Image
         src={mastercraftLogo}
         alt={"Bookmark Icon"}
@@ -26,6 +27,6 @@ export function Box() {
         <Button text="Back this project" />
         <ButtonRound icon={bookmarkIcon} />
       </div>
-    </div>
+    </Box>
   );
 }
