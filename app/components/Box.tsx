@@ -8,18 +8,18 @@ import bookmarkIcon from "../../images/icon-bookmark.svg";
 
 export function Box() {
   return (
-    <div className="flex flex-col justify-items-center justify-center border-solid border-slate-800 bg-slate-200 rounded-lg shadow-2xl mx-auto w-11/12 text-center">
+    <div className="flex flex-col justify-items-center justify-center border-solid border-slate-800 bg-white rounded-lg shadow-lg px-4 mx-auto w-10/12 text-center relative -top-12">
       <Image
         src={mastercraftLogo}
         alt={"Bookmark Icon"}
         height={1000}
         width={1000}
-        className="h-12 w-auto"
+        className="h-12 relative -top-7 inset-x-0"
       />
-      <h1 className="font-semibold my-5 px-10">
+      <h1 className="font-semibold mb-4 px-10 text-lg">
         Mastercraft Bamboo Monitor Riser
       </h1>
-      <p className="text-sm px-3">
+      <p className="text-sm px-3 text-[#7a7a7a]">
         A beautifully handcrafted monitor stand to reduce neck and eye strain.
       </p>
       <div className="button-row flex flex-row justify-between px-2">

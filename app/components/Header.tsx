@@ -5,7 +5,7 @@ import HamburgerMenuIcon from "../../images/icon-hamburger.svg";
 
 export function Header() {
   return (
-    <div className="flex flex-row justify-between px-5 py-6 bg-black z-50">
+    <nav className="flex flex-row justify-between w-full px-5 py-6 z-10 fixed top-0">
       <Image
         src={Logo}
         alt={"Crowdfund Logo"}
@@ -20,6 +20,6 @@ export function Header() {
         width={10000}
         className="hamburger-menu-icon h-5 w-auto cursor-pointer"
       />
-    </div>
+    </nav>
   );
 }

@@ -9,7 +9,7 @@ export function Hero() {
       alt={"Hero Mobile Image"}
       height={1000}
       width={10000}
-      className=""
+      className="z-1"
     />
   );
 }
