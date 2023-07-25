@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import { MobileMenu } from "../components/MobileMenu";
+
 import Logo from "../../images/logo.svg";
 import HamburgerMenuIcon from "../../images/icon-hamburger.svg";
 
@@ -20,6 +22,7 @@ export function Header() {
         width={10000}
         className="hamburger-menu-icon h-5 w-auto cursor-pointer"
       />
+      {/* <MobileMenu /> */}
     </nav>
   );
 }
