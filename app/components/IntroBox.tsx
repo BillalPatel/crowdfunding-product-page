@@ -8,7 +8,7 @@ import bookmarkIcon from "../../images/icon-bookmark.svg";
 
 export function IntroBox() {
   return (
-    <div className="flex flex-col justify-items-center justify-center border-solid border-slate-800 bg-white rounded-lg shadow-lg px-4 mx-auto w-10/12 text-center relative -top-12 lg:w-2/4">
+    <div className="flex flex-col justify-items-center justify-center border-solid border-slate-800 bg-white rounded-lg shadow-lg px-4 mx-auto w-10/12 text-center lg:w-2/4 max-w-6xl">
       <Image
         src={mastercraftLogo}
         alt={"Bookmark Icon"}

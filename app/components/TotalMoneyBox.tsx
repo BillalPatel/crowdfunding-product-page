@@ -1,37 +1,37 @@
 import { DividerLine } from "../components/shared/DividerLine";
+import { AmountItem } from "./AmountItem";
+import { ProgressBar } from "../components/ProgressBar";
 
 export function TotalMoneyBox() {
+  const numberData = [
+    { key: "objectOne", amountTotal: "$89,914", outOf: "of $100,00 backed" },
+    { key: "objectTwo", amountTotal: "5,007", outOf: "total backers" },
+    { key: "objectThree", amountTotal: "56", outOf: "days left" },
+  ];
+
   return (
-    <div className="justify-items-center justify-center border-solid border-slate-800 bg-white rounded-lg shadow-lg px-4 py-10 mx-auto w-10/12 text-center my-3 lg:w-2/4">
-      <div className="container flex flex-col lg:flex-row pb-10">
-        <h1 className="font-semibold px-10 text-4xl">
-          $89,914
-          <br />
-          <span className="text-sm text-[#7a7a7a] font-light">
-            of $100,000 backed
-          </span>
-        </h1>
+    <div className="justify-items-center justify-center items-center border-solid border-slate-800 bg-white rounded-lg shadow-lg py-10 lg:py-16 mx-auto w-10/12 text-center lg:w-2/4 max-w-6xl px-6 md:px-12 lg:px-16">
+      <div className="container flex flex-col lg:justify-between lg:flex-row pb-10 lg:text-left space-y-6 lg:space-y-0">
+        <AmountItem
+          key={numberData[0].key}
+          total={numberData[0].amountTotal}
+          outOf={numberData[0].outOf}
+        />
         <DividerLine />
-        {/* <h1 className="font-semibold px-10 text-4xl"> */}
-        <h1 className="font-semibold text-4xl">
-          5,007
-          <br />
-          <span className="text-sm text-[#7a7a7a] font-light">
-            total backers
-          </span>
-        </h1>
-        {/* <div className="border-t w-20 mx-auto my-5 md:hidden lg:hidden"></div>
-        <div className="border-l w-20 mx-auto my-5 hidden md:flex lg:flex"></div> */}
-        <div className="border-l h-16 mx-auto"></div>
-        <h1 className="font-semibold px-10 text-4xl">
-          56
-          <br />
-          <span className="text-sm text-[#7a7a7a] font-light">days left</span>
-        </h1>
+        <AmountItem
+          key={numberData[1].key}
+          total={numberData[1].amountTotal}
+          outOf={numberData[1].outOf}
+        />
+        <DividerLine />
+        <AmountItem
+          key={numberData[2].key}
+          total={numberData[2].amountTotal}
+          outOf={numberData[2].outOf}
+        />
       </div>
-      <div className="progress-bar rounded-full h-3 w-full bg-[#fafafa] px-10">
-        <div className="bg-[#3cb4ac] rounded-full h-full w-4/5"></div>
-      </div>
+
+      <ProgressBar percentage={"4/5"} />
     </div>
   );
 }

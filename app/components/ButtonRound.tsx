@@ -3,7 +3,7 @@ import Image from "next/image";
 export function ButtonRound(props: any) {
   const { icon } = props;
   return (
-    <div className="outline-none rounded-full bg-slate-100 text-[#7a7a7a] font-semibold flex flex-row justify-between">
+    <div className="outline-none rounded-full bg-[#F2F2F2] text-[#7a7a7a] font-semibold flex flex-row justify-between">
       <Image
         src={icon}
         alt={"Bookmark Icon"}

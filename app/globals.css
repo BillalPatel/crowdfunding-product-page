@@ -7,4 +7,20 @@
   html {
     font-family: Commissioner, system-ui, sans-serif;
   }
+
+  /* Remove scroll from input fields */
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.currency::before {
+  content: "$";
+  position: absolute;
+  top: 0.625rem;
+  left: 1rem;
+  color: #7A7A7A;
+  /* @apply text-dark-gray; */
 }
