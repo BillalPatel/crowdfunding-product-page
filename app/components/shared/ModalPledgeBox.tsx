@@ -20,6 +20,13 @@ export function ModalPledgeBox(props: any) {
   const [isSelected, setIsSelected] = useState(true);
   // const [isRadioSelected, setIsRadioSelected] = useState(false);
 
+  function handleContinueClick(e: any) {
+    console.log(
+      "🚀 ~ file: ModalPledgeBox.tsx:24 ~ handleContinueClick ~ e:",
+      e
+    );
+  }
+
   return (
     <div
       className="flex flex-col justify-items-center border rounded-lg py-6 lg:py-8 lg:pb-4 px-7 text-left border-opacity-20"
@@ -53,35 +60,31 @@ export function ModalPledgeBox(props: any) {
           </p>
         )}
         {isSelected && (
-          <div className="">
-            <div className="flex lg:flex-row justify-between w-full flex-col space-y-4 lg:space-y-0">
-              <p className="text-[#7a7a7a] flex self-center">
-                Enter your pledge
-              </p>
-              <div
-                className="button-row flex flex-row space-x-5"
-                onClick={onClick}
-              >
-                <div>
-                  <label htmlFor="amount" className="relative">
-                    <span className="currency relative">
-                      <input
-                        type="number"
-                        name="amount"
-                        min="0"
-                        // value={amount}
-                        // onChange={(e) => {
-                        //   setPledgeAmount(e.target.value);
-                        //   setErrorText(false);
-                        // }}
-                        className="focus:text-[#000] opacity-[0.25] p-2.5 mx-auto rounded-full border flex text-center border-[#7a7a7a] max-h-12 font-bold w-[6.25rem]"
-                      />
-                    </span>
-                  </label>
-                </div>
-                <Button text="Continue" inStock={inStock} />
-              </div>
-            </div>
+          <div className="flex lg:flex-row justify-between w-full flex-col space-y-4 lg:space-y-0">
+            {/* <p className="text-[#7a7a7a] flex self-center">Enter your pledge</p>
+            <div
+              className="button-row flex flex-row space-x-5"
+              onClick={onClick}
+            > */}
+              {/* <div>
+                <label htmlFor="amount" className="relative">
+                  <span className="currency relative">
+                    <input
+                      type="number"
+                      name="amount"
+                      min="0"
+                      // value={amount}
+                      // onChange={(e) => {
+                      //   setPledgeAmount(e.target.value);
+                      //   setErrorText(false);
+                      // }}
+                      className="focus:text-[#000] opacity-[0.25] p-2.5 mx-auto rounded-full border flex text-center border-[#7a7a7a] max-h-12 font-bold w-[6.25rem]"
+                    />
+                  </span>
+                </label>
+              </div> */}
+              {/* <Button text="Continue" inStock={inStock} /> */}
+            {/* </div> */}
           </div>
         )}
       </div>

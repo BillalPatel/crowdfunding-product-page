@@ -1,7 +1,7 @@
 export function Button(props: any) {
-  const { text, inStock } = props;
+  const { onClick, text, inStock } = props;
   return (
-    <>
+    <div onClick={onClick}>
       {inStock === false ? (
         <button
           type="button"
@@ -17,6 +17,6 @@ export function Button(props: any) {
           {text}
         </button>
       )}
-    </>
+    </div>
   );
 }

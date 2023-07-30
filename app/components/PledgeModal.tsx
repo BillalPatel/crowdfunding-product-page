@@ -76,6 +76,5 @@ export function PledgeModal() {
         </div>
       </div>
     </>
-    // </BackgroundContext>
   );
 }
